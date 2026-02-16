@@ -2,10 +2,31 @@
 A special "data-mage-init" HTML attribute is declared on the main DOM element you wish to initialize,
 and then the JavaScript component and properties are passed to it as a JSON string.
 -->
-<div id="vue-test"
+<!--div id="vue-test"
      data-mage-init='{ "Denal05_MacademyJsFun/js/vue-test": { "message": "This is a JavaScript message from vue-test.phtml using the data-mage-init HTML attribute. Lesson: Declaratively initialize a JavaScript component" } }'>
     <h1>{{ message }}</h1>
+</div-->
+<div id="vue-test">
+    <h1>{{ message }}</h1>
 </div>
+
+<!--
+    /**
+     * Target the DOM element with a standard JavaScrip selector. You may also
+     * replace the selector with "*" to target all elements. The next property is
+     * the JavaScript component you wish to initialize, with the value of an object
+     * containing properties you wish to set for that component.
+     */
+-->
+<script type="text/x-magento-init">
+    {
+        "#vue-test": {
+            "Denal05_MacademyJsFun/js/vue-test": {
+                "message": "This is a JavaScript message from vue-test.phtml using the text/x-magento-init script type. Lesson: Declaratively initialize a JavaScript component"
+            }
+        }
+    }
+</script>
 
 <!--
 The inline script below has been moved to vue-test.js to replace the imperative init with the declarative.
