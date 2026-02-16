@@ -1,13 +1,16 @@
-<div id="vue-test">
+<!--
+A special "data-mage-init" HTML attribute is declared on the main DOM element you wish to initialize,
+and then the JavaScript component and properties are passed to it as a JSON string.
+-->
+<div id="vue-test"
+     data-mage-init='{ "Denal05_MacademyJsFun/js/vue-test": { "message": "This is a JavaScript message from vue-test.phtml using data-mage-init. Lesson: Declaratively initialize a JavaScript component" } }'>
     <h1>{{ message }}</h1>
 </div>
 
-<script>
-    /**
-     * Define the `require` statement inline of your PHTML template.
-     * RequireJS will automatically pull in the required dependencies,
-     * and fire off your callback after they have resolved.
-     */
+<!--
+The inline script below has been moved to vue-test.js to replace the imperative init with the declarative.
+-->
+<!--script>
     require(['vue'], function(Vue) {
         'use strict'
 
@@ -18,4 +21,4 @@
             }
         });
     });
-</script>
+</script-->
