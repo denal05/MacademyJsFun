@@ -7,7 +7,9 @@ var config = {
     },
     "paths": {
         "vue": [
+            // First try to use the CDN version of Vue:
             "https://cdn.jsdelivr.net/npm/vue@2/dist/vue",
+            // and if the CDN is offline, use the local Vue version:
             "Denal05_MacademyJsFun/js/vue"
         ]
     }
