@@ -6,6 +6,9 @@ var config = {
         }
     },
     "paths": {
-        "vue": "https://cdn.jsdelivr.net/npm/vue@2/dist/vue"
+        "vue": [
+            "https://cdn.jsdelivr.net/npm/vue@2/dist/vue",
+            "Denal05_MacademyJsFun/js/vue"
+        ]
     }
 };
