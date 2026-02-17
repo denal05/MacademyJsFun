@@ -4,7 +4,11 @@
         <!-- Use referenceContainer or referenceBlock to reference the node you wish to target... -->
         <referenceContainer name="content">
             <!-- ...and add your template to the layout XML as a standard block template. -->
-            <block name="vue.test" template="Denal05_MacademyJsFun::vue-test.phtml"/>
+            <block name="vue.test" template="Denal05_MacademyJsFun::vue-test.phtml">
+                <arguments>
+                    <argument name="message_view_model" xsi:type="object">Denal05\MacademyJsFun\ViewModel\Message</argument>
+                </arguments>
+            </block>
         </referenceContainer>
     </body>
 </page>

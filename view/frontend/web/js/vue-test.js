@@ -7,7 +7,7 @@
  * attribute rather than an ID selector within your JS initialization.
  */
 define(['vue'], function(Vue) {
-    'use strict'
+    'use strict';
 
     return function(config, element) {
         return new Vue({

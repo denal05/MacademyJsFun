@@ -1,3 +1,8 @@
+<?php
+/** @var \Denal05\MacademyJsFun\ViewModel\Message $messageViewModel */
+$messageViewModel = $block->getData('message_view_model');
+?>
+
 <!--
 A special "data-mage-init" HTML attribute is declared on the main DOM element you wish to initialize,
 and then the JavaScript component and properties are passed to it as a JSON string.
@@ -22,7 +27,7 @@ and then the JavaScript component and properties are passed to it as a JSON stri
     {
         "#vue-test": {
             "Denal05_MacademyJsFun/js/vue-test": {
-                "message": "This is a JavaScript message from vue-test.phtml using the text/x-magento-init script type. Lesson: Declaratively initialize a JavaScript component"
+                "message": "<?= $messageViewModel->getMessage() ?>"
             }
         }
     }
