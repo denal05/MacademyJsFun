@@ -6,8 +6,9 @@
  * wish to refeference. In this case, hardcode a selector or use an HTML class
  * attribute rather than an ID selector within your JS initialization.
  */
-define(['vue'], function(Vue) {
+define(['vue', 'jquery', 'Denal05_MacademyJsFun/js/jquery-log'], function(Vue, $) {
     'use strict';
+    // $.log("This is a jQuery message from vue-test.js using a jQuery extension module Denal05_MacademyJsFun/js/jquery-log.js Lesson: Use a RequireJS shim to define JavaScript relationships");
 
     return function(config, element) {
         return new Vue({
