@@ -26,5 +26,13 @@ var config = {
     // and a dependency.
     "deps": [
         "Denal05_MacademyJsFun/js/every-page"
-    ]
+    ],
+    "config": {
+        // Mixins are custom. To use a mixin, the AMD module needs to return a UI component, a jQuery widget, or a JS object.
+        "mixins": {
+            "Magento_Ui/js/view/messages": {
+                "Denal05_MacademyJsFun/js/view/messages-mixin": true
+            }
+        }
+    }
 };
