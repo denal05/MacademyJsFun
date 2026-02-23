@@ -2,7 +2,8 @@ var config = {
     // "map" works only with local AMD modules.
     "map": {
         "*": {
-            "fadeInElementAlias": "Denal05_MacademyJsFun/js/fade-in-element"
+            "fadeInElementAlias": "Denal05_MacademyJsFun/js/fade-in-element",
+            "Magento_Review/js/submit-review": "Denal05_MacademyJsFun/js/submit-review"
         }
     },
     // Path fallbacks for defining JS files:
